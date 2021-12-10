@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float mainThrust = 100f;
+    [SerializeField] float mainThrust = 1000f;
     [SerializeField] float rotateThrust = 1f;
 
 
@@ -52,9 +52,9 @@ public class Movement : MonoBehaviour
     //3
     void ApplyRotation(float rotateThisFrame)
     {
-    	rb.freezeRotation = true;
+    	rb.freezeRotation = true;  // freeze Rotation to manual rotate
         transform.Rotate(Vector3.forward * rotateThisFrame * Time.deltaTime);
-        rb.freezeRotation = false;
+        rb.freezeRotation = false;  // unfreeze Rotation to manual rotate
     }
 
 
