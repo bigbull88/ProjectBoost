@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
         else if(Input.GetKey(KeyCode.D))
         {
             //Debug.Log("Pressing D - Rotate Right");
-             transform.Rotate(Vector3.up;
+             transform.Rotate(Vector3.back);
         }
     }
 
