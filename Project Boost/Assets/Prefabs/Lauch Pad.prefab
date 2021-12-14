@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2900237718873118172}
   m_Layer: 0
   m_Name: Lauch Pad
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d0aa87a052c72d04bab4f7421786b509, type: 2}
+  - {fileID: 2100000, guid: 654620a2f14a0174bb5f418211f5f159, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

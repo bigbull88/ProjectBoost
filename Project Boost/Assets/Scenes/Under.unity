@@ -312,10 +312,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lauch Pad
       objectReference: {fileID: 0}
-    - target: {fileID: 4152689729732937076, guid: dbb82cba5798692499a04e80b1331062, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 654620a2f14a0174bb5f418211f5f159, type: 2}
     - target: {fileID: 6504748838282595803, guid: dbb82cba5798692499a04e80b1331062, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -426,18 +422,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1608538771, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: mainThrust
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608538776, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1608538776, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
     - target: {fileID: 1795306034461206209, guid: 540644e149f5e65438217106e6846f7d, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -552,6 +536,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3782874842199735024, guid: 1e03d019c8d676a4e90be352e6fdb933, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4b4a4e51a52bb2a42849117b81e31c1f, type: 2}
     - target: {fileID: 6097481189252673917, guid: 1e03d019c8d676a4e90be352e6fdb933, type: 3}
       propertyPath: m_Name
       value: Obstacle
@@ -561,16 +549,12 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9060559207712633740, guid: 1e03d019c8d676a4e90be352e6fdb933, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.1833715
-      objectReference: {fileID: 0}
-    - target: {fileID: 9060559207712633740, guid: 1e03d019c8d676a4e90be352e6fdb933, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.45
       objectReference: {fileID: 0}
     - target: {fileID: 9060559207712633740, guid: 1e03d019c8d676a4e90be352e6fdb933, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 12.08
       objectReference: {fileID: 0}
     - target: {fileID: 9060559207712633740, guid: 1e03d019c8d676a4e90be352e6fdb933, type: 3}
       propertyPath: m_LocalPosition.z

@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    Rigidbody rb;
+    //PARAMETERS - for tuning, typically set by editor
+    //CACHE - e.g. references for readability or speed
+    //STATE - private instantce (member) variables
+
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float rotateThrust = 1f;
+    [SerializeField] AudioClip MainEngineAudio;
+
+    Rigidbody rb;
+    AudioSource audioSource;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +38,15 @@ public class Movement : MonoBehaviour
         {
             //Debug.Log("Pressing Space - Thrusting");
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+            
+           if(!audioSource.isPlaying)
+           {
+            audioSource.PlayOneShot(MainEngineAudio);
+           }    
+        }
+        else
+        {
+            audioSource.Stop();
         }
         
     }
