@@ -422,37 +422,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1608538771, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: MainEngineAudio
-      value: 
-      objectReference: {fileID: 8300000, guid: ee61dc22d7c8be94d8b5b4dc5e6943ba, type: 3}
     - target: {fileID: 1795306034461206209, guid: 540644e149f5e65438217106e6846f7d, type: 3}
       propertyPath: m_Name
       value: Rocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698768055491046126, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698768055491046133, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: audioCrash
-      value: 
-      objectReference: {fileID: 8300000, guid: 043b1606bc555934790c06a2ec982b9c, type: 3}
-    - target: {fileID: 3698768055491046133, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: audioDeath
-      value: 
-      objectReference: {fileID: 8300000, guid: 043b1606bc555934790c06a2ec982b9c, type: 3}
-    - target: {fileID: 3698768055491046133, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: audiocrash
-      value: 
-      objectReference: {fileID: 8300000, guid: 043b1606bc555934790c06a2ec982b9c, type: 3}
-    - target: {fileID: 3698768055491046133, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: audioSucess
-      value: 
-      objectReference: {fileID: 8300000, guid: 35b7f14656c0bf444822ce6438e51f50, type: 3}
-    - target: {fileID: 3698768055491046133, guid: 540644e149f5e65438217106e6846f7d, type: 3}
-      propertyPath: levelLoadDelay
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6083744084967049862, guid: 540644e149f5e65438217106e6846f7d, type: 3}
       propertyPath: m_RootOrder
