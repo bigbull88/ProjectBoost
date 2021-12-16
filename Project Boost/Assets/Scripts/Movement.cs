@@ -57,6 +57,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
+        	MainEngineParticle.Stop();
             audioSource.Stop();
         }
         
