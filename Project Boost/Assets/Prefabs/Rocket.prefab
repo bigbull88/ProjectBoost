@@ -335,9 +335,9 @@ MonoBehaviour:
   mainThrust: 1000
   rotateThrust: 100
   MainEngineAudio: {fileID: 8300000, guid: ee61dc22d7c8be94d8b5b4dc5e6943ba, type: 3}
-  MainEngineParticle: {fileID: 0}
-  RightThrusterParticle: {fileID: 0}
-  LeftThrusterParticle: {fileID: 0}
+  MainEngineParticle: {fileID: 4527710765490808191}
+  RightThrusterParticle: {fileID: 117059055457877003}
+  LeftThrusterParticle: {fileID: 4290882378485329390}
 --- !u!82 &3698768055491046126
 AudioSource:
   m_ObjectHideFlags: 0
@@ -692,6 +692,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
   m_PrefabInstance: {fileID: 685341572892303977}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &117059055457877003 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 685341572892303977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2833883492625344880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -888,6 +893,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
   m_PrefabInstance: {fileID: 3715879650276897676}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &4290882378485329390 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 3715879650276897676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4353401383226836995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -945,10 +955,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
       propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+      propertyPath: ShapeModule.angle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+--- !u!198 &4527710765490808191 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+  m_PrefabInstance: {fileID: 4353401383226836995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4358339621857111863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4940884351362868, guid: a3553fd250eb92d4091bebde350c6739, type: 3}

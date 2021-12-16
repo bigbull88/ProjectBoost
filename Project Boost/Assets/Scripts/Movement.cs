@@ -41,26 +41,14 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            //Debug.Log("Pressing Space - Thrusting");
-            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
-            
-           if(!audioSource.isPlaying)
-           {
-            audioSource.PlayOneShot(MainEngineAudio);
-           }  
-
-           if(!MainEngineParticle.isPlaying)
-           {
-               MainEngineParticle.Play();
-           }
+            StartThrusting();
 
         }
         else
         {
-        	MainEngineParticle.Stop();
-            audioSource.Stop();
+            StopThrusting();
         }
-        
+
     }
 
     //2 Rotation
@@ -68,31 +56,74 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.A))
         {
-            //Debug.Log("Pressing A - Rotate Left");
-            ApplyRotation(rotateThrust);
-            if(!RightThrusterParticle.isPlaying)
-           {
-               RightThrusterParticle.Play();
-           }
-            
+            RotateLeft();
+
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            //Debug.Log("Pressing D - Rotate Right");
-            ApplyRotation(-rotateThrust);
-            if(!LeftThrusterParticle.isPlaying)
-           {
-               LeftThrusterParticle.Play();
-           }
+            RotateRight();
         }
         else
         {
-            RightThrusterParticle.Stop();
-            LeftThrusterParticle.Stop();
+            StopRotating();
         }
     }
 
-    //3
+
+    //Thrusting
+    void StartThrusting()
+    {
+        //Debug.Log("Pressing Space - Thrusting");
+        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(MainEngineAudio);
+        }
+
+        if (!MainEngineParticle.isPlaying)
+        {
+            MainEngineParticle.Play();
+        }
+    }
+
+    void StopThrusting()
+    {
+        MainEngineParticle.Stop();
+        audioSource.Stop();
+    }
+
+
+
+    
+    //Rotating
+    void RotateLeft()
+    {
+        //Debug.Log("Pressing A - Rotate Left");
+        ApplyRotation(rotateThrust);
+        if (!RightThrusterParticle.isPlaying)
+        {
+            RightThrusterParticle.Play();
+        }
+    }
+
+    void RotateRight()
+    {
+        //Debug.Log("Pressing D - Rotate Right");
+        ApplyRotation(-rotateThrust);
+        if (!LeftThrusterParticle.isPlaying)
+        {
+            LeftThrusterParticle.Play();
+        }
+    }
+
+    void StopRotating()
+    {
+        RightThrusterParticle.Stop();
+        LeftThrusterParticle.Stop();
+    }
+
+    
     void ApplyRotation(float rotateThisFrame)
     {
     	rb.freezeRotation = true;  // freeze Rotation to manual rotate
