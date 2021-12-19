@@ -19,22 +19,44 @@ public class CollisionHandler : MonoBehaviour
     //ParticleSystem particleSource;
 
     bool isTransitioning = false;
+    bool collisionDisable = false;
+
     
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
+    void Update()
+    {
+        DebugKeyPress();
+    }
+
+    void DebugKeyPress()
+    {
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionDisable = !collisionDisable; //toggle collision
+        }
+    }
+
+
+//-------------------------------------------------------------------------
 
     void OnCollisionEnter(Collision other) 
     {
 
-        if (isTransitioning) {return;}
+        if (isTransitioning || collisionDisable) {return;}
 
         switch (other.gameObject.tag)
         {
             case "Friendly":
-                Debug.Log("Launching pad");
+                //Debug.Log("Launching pad");
                 break;
             case "Finish":
                 //Debug.Log("Finish");
